@@ -1,6 +1,8 @@
 package com.training;
 
 import java.util.Arrays;
+import java.util.List;
+
 import org.junit.Assert;
 import org.testng.annotations.Test;
 import org.testng.annotations.DataProvider;
@@ -96,6 +98,15 @@ public class SorterTest {
                 "For " + Arrays.toString(unSorted) + ", obtained " + Arrays.toString(workingCopy),
                 workingCopy,
                 sorted);
+    }
+
+    @Test
+    public void testNQueens(){
+        //TODO: fix the simple print test
+        EightQueens queens = new EightQueens();
+        List<List<Integer>> result = queens.solve(8);
+        System.out.print(result.size());
+        System.out.print(result);
     }
 
 }
