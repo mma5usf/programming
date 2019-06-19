@@ -109,4 +109,24 @@ public class SorterTest {
         System.out.print(result);
     }
 
+
+    @Test
+    public void testFactorial(){
+        Factorial factorial = new Factorial();
+        int n = factorial.factorialUsingRecursion(5);
+        System.out.println(5 + " : " + n);
+        int n2 = factorial.factorialUsingRecursion(-2);
+        System.out.println(-2 + " : " + n2);
+        int n3 = factorial.factorialUsingRecursion(13);
+        System.out.println(13 + " : " + n3);
+    }
+
+
+    @Test
+    public void testFactorial2(){
+        Factorial factorial = new Factorial();
+        int n = factorial.factorial(5);
+        System.out.println(5 + " : " + n);
+    }
+
 }
